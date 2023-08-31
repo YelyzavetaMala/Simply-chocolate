@@ -1,0 +1,44 @@
+.logo {
+    color: #111111;
+}
+
+.nav-link {
+    color: #111111;
+}
+
+.nav-link:hover {
+    color: #FD9222;
+}
+
+.hero-section {
+    background-color: #1E1823;
+}
+
+.hero-title {
+    color: #FFF;
+}
+
+.button-primary {
+    background-color: #FD9222;
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 100px;
+}
+
+.button-primary:hover {
+    color:#FD9222;
+    background-color:#FCF1E0; 
+}
+
+.hero-button {
+    color: #FFF;
+    border: 1px solid currentColor;
+    padding: 14px 40px;
+    border-radius: 100px;
+}
+
+.hero-button:hover {
+    color: #FD9222;
+}
