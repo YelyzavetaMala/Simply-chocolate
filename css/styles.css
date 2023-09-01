@@ -1,45 +1,142 @@
-.logo {
-    color: #111111;
+:root {
+    --color-brand: #FD9222;
+    --color-primari: #111;
+    --color-primeri-light: #FFF;
+    --color-primeri-light-tr:#FFFFFFB2;
+    --color-background: #1E1823;
+    --color-background-light: #fafafa;
+}
+/*Base*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-primari);
+    background-color: var(--color-background-light);
+    font-size: 14px;
 }
 
-.nav-link {
-    color: #111111;
+a {
+    text-decoration: none;
 }
 
-.nav-link:hover {
-    color: #FD9222;
+ul {
+    list-style-type: none;
 }
 
-.hero-section {
-    background-color: #1E1823;
+button {
+    font-family: inherit;
 }
+/*END Base*/
 
-.hero-title {
-    color: #FFF;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .button-primary {
-    background-color: #FD9222;
-    color: #FFF;
+    background-color: var(--color-brand);
+    color: var(--color-primeri-light);
     cursor: pointer;
     border: none;
     padding: 14px 40px;
     border-radius: 100px;
+    font-weight: 600;
+    line-height: 1.21;
 }
 
 .button-primary:hover {
-    color:#FD9222;
-    background-color:#FCF1E0; 
+    color: var(--color-brand);
+    background-color: #FCF1E0;
+}
+
+/*Header*/
+.logo {
+    color: var(--color-primari);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.logo-accent {
+    font-style: italic;
+}
+
+.nav-link {
+    color: var(--color-primari);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--color-brand);
+}
+/*END Header*/
+
+/*Hero section*/
+.hero-section {
+    background-color: var(--color-background);
+}
+
+.hero-title {
+    color: var(--color-primeri-light);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.84px;
 }
 
 .hero-button {
-    color: #FFF;
+    color: var(--color-primeri-light);
     border: 1px solid currentColor;
     padding: 14px 40px;
     border-radius: 100px;
+    font-weight: 600;
+    line-height: 1.21;
 }
 
 .hero-button:hover {
-    color: #FD9222;
+    color: var(--color-brand);
 }
 
+.hero-scroll-down {
+    color: var(--color-primeri-light);
+    font-weight: 500;
+    line-height: 1.28;
+    letter-spacing: -0.03;
+}
+
+.hero-scroll-down:hover {
+    color: var(--color-brand);
+}
+/*END Hero section*/
+
+/*Advantages section*/
+.advantage-section {
+    background-color: var(--color-background);
+}
+
+.advantage-title {
+    color: var(--color-primeri-light-tr);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.22;
+}
+
+.advantage-text {
+    font-weight: 400;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+}
+/*END Advantages section*/
