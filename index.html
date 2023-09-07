@@ -12,43 +12,50 @@
 </head>
 <body>
     <header>
-    <nav>
-     <a class="logo" href="./index.html">
-       <span class="logo-accent">Simply</span> chocolate  
-       <img 
-        src="./images/icons/chocolate.svg" 
-        alt="Simply Chocolate logo" 
-        width="24"
-       />
-     </a>
-        <ul>
-            <li>
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li>
-                <a class="nav-link" href="#">How it’s made?</a>
-            </li>
-            <li>
-                <a class="nav-link" href="#">Our products</a>
-            </li>
-            <li>
-                <a class="nav-link" href="#">Top sellers</a>
-            </li>
-            <li>
-                <a class="nav-link" href="#">Chocolate is loved</a>
-            </li>
-        </ul>
-     </nav>
-     <a href="#">
-        <img src="./images/icons/instagram.svg" alt="Instagram" width="24">
-     </a>
-     <a href="#">
-        <img src="./images/icons/twitter.svg" alt="Twitter" width="24">
-     </a>
+    <div class="container">
+     <div class="header-inner">
+        <nav class="header-nav">
+        <a class="logo" href="./index.html">
+        <span class="logo-accent">Simply</span> chocolate  
+        <img 
+            src="./images/icons/chocolate.svg" 
+            alt="Simply Chocolate logo" 
+            width="24"
+        />
+        </a>
+            <ul class="nav-list">
+                <li>
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">How it’s made?</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">Our products</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">Top sellers</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">Chocolate is loved</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-socials"> 
+            <a href="#" target="_blank">
+                <img src="./images/icons/instagram.svg" alt="Instagram" width="24">
+            </a>
+            <a href="#" target="_blank">
+                <img src="./images/icons/twitter.svg" alt="Twitter" width="24">
+            </a>
+        </div>
+     </div>
+    </div>
     </header>
     <main>
         <!-- Hero section -->
        <section class="hero-section">
+        <div class="container">
          <h1 class="hero-title">
             Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
          </h1>
@@ -58,39 +65,42 @@
             scroll down
             <img src="./images/icons/arrow.svg" alt="Scroll down"/>
          </a>
+        </div>
        </section>
 
        <!-- Advantages section -->
        <section class="advantage-section">
-        <!--TODO: hide this title visually -->
+        <div class="container">
         <h2 class="visually-hidden">Our advantages</h2>
         <ul>
             <li>
-                <img src="./images/icons/chocolate-bar.svg" alt="Chocolate-bar">
+                <img class="advantage-icon" src="./images/icons/chocolate-bar.svg" alt="Chocolate-bar">
                 <h3 class="advantage-title">Unsurpassed taste</h3>
                 <p class="advantage-text">
                     Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.
                 </p>
             </li>
             <li>
-                <img src="./images/icons/coin.svg" alt="Coin">
+                <img class="advantage-icon" src="./images/icons/coin.svg" alt="Coin">
                 <h3 class="advantage-title">Affordable price</h3>
                 <p class="advantage-text">
                     Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.
                 </p>
             </li>
             <li>
-                <img src="./images/icons/spoon.svg" alt="Spoon">
+                <img class="advantage-icon" src="./images/icons/spoon.svg" alt="Spoon">
                 <h3 class="advantage-title">Own production</h3>
                 <p class="advantage-text">
                     We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.
                 </p>
             </li>
         </ul>
+        </div>
        </section>
 
        <!-- Ingridients section -->
-       <section>
+       <section class="section">
+        <div class="container">
         <h2>It all adds up to one exceptional taste sensation</h2>
         <p>
             At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the
@@ -115,10 +125,11 @@
                 <h3>Semi chocolate</h3>
             </li>
         </ul>
+        </div>
        </section>
 
        <!-- "How it’s made" section -->
-       <section>
+       <section class="section">
         <h2>How it’s made?</h2>
         <!--placeholder for video. TODO: replace for video-->
         <img src="./images/video-bg.jpg" alt="Video background">

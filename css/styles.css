@@ -56,8 +56,35 @@ button {
     background-color: #FCF1E0;
 }
 
+.section {
+    padding: 64px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
 /*Header*/
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-socials {
+    display: flex;
+    gap: 18px;
+}
+
+.header-nav {
+    display: flex;
+}
+
 .logo {
+    display: flex;
+    gap: 4px;
     color: var(--color-primari);
     font-size: 18px;
     font-weight: 700;
@@ -71,7 +98,14 @@ button {
     font-style: italic;
 }
 
+.nav-list {
+    display: flex;
+    gap: 24px;
+}
+
 .nav-link {
+    display: inline-block;
+    padding: 24px 0 32px;
     color: var(--color-primari);
     font-weight: 500;
     line-height: 1.14;
@@ -87,6 +121,7 @@ button {
 /*Hero section*/
 .hero-section {
     background-color: var(--color-background);
+    padding: 380px 0 40px;
 }
 
 .hero-title {
@@ -95,6 +130,8 @@ button {
     font-weight: 500;
     line-height: 1.21;
     letter-spacing: -0.84px;
+    margin-bottom: 32px;
+    max-width: 484px;
 }
 
 .hero-button {
@@ -125,6 +162,7 @@ button {
 /*Advantages section*/
 .advantage-section {
     background-color: var(--color-background);
+    padding: 50px 0;
 }
 
 .advantage-title {
@@ -138,5 +176,16 @@ button {
     font-weight: 400;
     line-height: 1.21;
     letter-spacing: -0.02em;
+    color: var(--color-primeri-light-tr);
+    margin-bottom: 18px;
 }
+
+.advantage-icon {
+    margin-bottom: 22px;
+    border: 1px solid var(--color-primeri-light-tr);
+    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+}
+
 /*END Advantages section*/
