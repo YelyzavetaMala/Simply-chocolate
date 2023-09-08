@@ -11,7 +11,7 @@
         rel="stylesheet"/>
 </head>
 <body>
-    <header>
+    <header class="header">
     <div class="container">
      <div class="header-inner">
         <nav class="header-nav">
@@ -56,15 +56,19 @@
         <!-- Hero section -->
        <section class="hero-section">
         <div class="container">
-         <h1 class="hero-title">
-            Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
-         </h1>
-         <button class="button-primary" type="button">Buy now</button>
-         <a class="hero-button" href="#">How it’s made</a>
-         <a class="hero-scroll-down" href="#">
-            scroll down
-            <img src="./images/icons/arrow.svg" alt="Scroll down"/>
-         </a>
+         <div class="hero-inner">
+            <h1 class="hero-title">
+                Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
+            </h1>
+            <div class="hero-actions">
+                <button class="button-primary" type="button">Buy now</button>
+                <a class="hero-button" href="#">How it’s made</a>
+                <a class="hero-scroll-down" href="#">
+                    scroll down
+                    <img src="./images/icons/arrow.svg" alt="Scroll down"/>
+                </a>
+            </div>
+         </div>
         </div>
        </section>
 
@@ -72,22 +76,22 @@
        <section class="advantage-section">
         <div class="container">
         <h2 class="visually-hidden">Our advantages</h2>
-        <ul>
-            <li>
+        <ul class="advantage-list">
+            <li class="advantage-item">
                 <img class="advantage-icon" src="./images/icons/chocolate-bar.svg" alt="Chocolate-bar">
                 <h3 class="advantage-title">Unsurpassed taste</h3>
                 <p class="advantage-text">
                     Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.
                 </p>
             </li>
-            <li>
+            <li class="advantage-item">
                 <img class="advantage-icon" src="./images/icons/coin.svg" alt="Coin">
                 <h3 class="advantage-title">Affordable price</h3>
                 <p class="advantage-text">
                     Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.
                 </p>
             </li>
-            <li>
+            <li class="advantage-item">
                 <img class="advantage-icon" src="./images/icons/spoon.svg" alt="Spoon">
                 <h3 class="advantage-title">Own production</h3>
                 <p class="advantage-text">
@@ -101,28 +105,36 @@
        <!-- Ingridients section -->
        <section class="section">
         <div class="container">
-        <h2>It all adds up to one exceptional taste sensation</h2>
-        <p>
+        <h2 class="ingridients-title">It all adds up to one exceptional taste sensation</h2>
+        <p class="ingridients-subtitle">
             At Simply Chocolate, we believe that the secret to exceptional chocolate is in the details. From the sourcing of the
             finest ingredients to the careful crafting of each individual piece, every step of our process adds up to one
             exceptional taste sensation.
         </p>
-        <ul>
-            <li>
-                <img src="./images/ingridients/milk-chocolate.webp" alt="Milk chocolate" width="206">
-                <h3>Milk chocolate</h3>
+        <ul class="ingridients-list">
+            <li class="ingridients-item">
+                <div class="ingridient">
+                    <img src="./images/ingridients/milk-chocolate.webp" alt="Milk chocolate" width="206">
+                    <h3>Milk chocolate</h3>
+                </div>
             </li>
-            <li>
-                <img src="./images/ingridients/milk.webp" alt="Milk" width="206">
-                <h3>Milk</h3>
+            <li class="ingridients-item">
+                <div class="ingridient">
+                    <img src="./images/ingridients/milk.webp" alt="Milk" width="206">
+                    <h3>Milk</h3>
+                </div>
             </li>
-            <li>
-                <img src="./images/ingridients/nuts.webp" alt="Nuts" width="206">
-                <h3>Nuts</h3>
+            <li class="ingridients-item">
+                <div class="ingridient">
+                    <img src="./images/ingridients/nuts.webp" alt="Nuts" width="206">
+                    <h3>Nuts</h3>
+                </div>
             </li>
-            <li>
-                <img src="./images/ingridients/semi-chocolate.webp" alt="Semi chocolate" width="206">
-                <h3>Semi chocolate</h3>
+            <li class="ingridients-item">
+                <div class="ingridient">
+                    <img src="./images/ingridients/semi-chocolate.webp" alt="Semi chocolate" width="206">
+                    <h3>Semi chocolate</h3>
+                </div>
             </li>
         </ul>
         </div>
@@ -130,21 +142,33 @@
 
        <!-- "How it’s made" section -->
        <section class="section">
-        <h2>How it’s made?</h2>
-        <!--placeholder for video. TODO: replace for video-->
-        <img src="./images/video-bg.jpg" alt="Video background">
-        <button type="button">
-            <img src="./images/icons/play.svg" alt="Play">
-        </button>
-        <p>Try our chocolates today and discover the perfect balance of flavor</p>
-        <ul>
-            <li>Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</li>
-            <li>At the same time, prepare a water bath. Melt the butter on it.</li>
-            <li>"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes
-            uniform and silky.</li>
-            <li>Heat the mixture over low heat, letting it barely boil.</li>
-            <li>Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</li>
-        </ul>
+            <div class="container">
+                <h2>How it’s made?</h2>
+                <div class="video-inner">
+                    <div class="video-media">
+                    <img 
+                        class="video-background"
+                        src="./images/video-bg.jpg" 
+                        alt="Video background"
+                        width="600"
+                    />
+                    <button class="video-play" type="button">
+                        <img src="./images/icons/play.svg" alt="Play">
+                    </button>
+                    </div>
+                    <div class="video-content">
+                        <p>Try our chocolates today and discover the perfect balance of flavor</p>
+                        <ul>
+                            <li>Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</li>
+                            <li>At the same time, prepare a water bath. Melt the butter on it.</li>
+                            <li>"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes
+                            uniform and silky.</li>
+                            <li>Heat the mixture over low heat, letting it barely boil.</li>
+                            <li>Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
        </section>
     </main>
     <footer>
