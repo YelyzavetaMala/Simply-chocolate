@@ -7,6 +7,11 @@
     --color-background-light: #fafafa;
 }
 /*Base*/
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--color-primari);
@@ -105,6 +110,16 @@ button {
     flex-grow: 1;
 }
 
+.header-socials-link {
+    stroke: var(--color-primari);
+    fill: none;
+    transition: stroke 0.2s;
+}
+
+.header-socials-link:hover {
+    stroke: var(--color-brand);
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -154,7 +169,10 @@ button {
     background-color: var(--color-background);
     padding: 380px 40px 40px;
     border-radius: 30px;
-
+    background-image: url('../images/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -186,7 +204,7 @@ button {
     color: var(--color-brand);
 }
 
-.hero-scroll-down {
+.hero-arrow {
     display: flex;
     align-items: center;
     gap: 14px;
@@ -195,11 +213,40 @@ button {
     font-weight: 500;
     line-height: 1.28;
     letter-spacing: -0.03;
+    animation: bounce 2s infinite reverse; 
 }
 
-.hero-scroll-down:hover {
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.hero-arrow:hover {
     color: var(--color-brand);
 }
+
+.hero-arrow-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    fill: var(--color-brand);
+    background-color: var(--color-background-light);
+    border-radius: 50%;
+}
+
+.hero-arrow-link:hover .hero-arrow-link {
+    fill: var(--color-primari);
+}
+
 /*END Hero section*/
 
 /*Advantages section*/
@@ -234,6 +281,10 @@ button {
 }
 
 .advantage-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--color-brand);
     margin-bottom: 22px;
     border: 1px solid var(--color-primeri-light-tr);
     border-radius: 50%;
@@ -300,3 +351,29 @@ button {
 
 
 /* END video section */
+
+/* Reviews section */
+.review-list {
+    display: flex;
+    gap: 28px;
+}
+
+.review-item {
+    position: relative;
+    flex-basis: calc((100% - 56px) / 3);
+}
+
+.review {
+    border: 1px solid var(--color-primeri);
+    background-color: var(--color-primeri-light);
+    box-shadow: 0px 9px 26px 0px var(--color-primeri-light-tr);
+    padding: 56px 24px 42px;
+    text-align: center;
+}
+
+.review-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
