@@ -217,9 +217,12 @@ button {
   border-radius: 365px;
   width: 62px;
   height: 62px;
+  fill: var(--color-brand);
 }
 
-.advantage-svg {
+.advantage-svg.coin {
+  border: 3px solid var(--color-brand);
+  border-radius: 365px;
 }
 /*END Advantages section*/
 
@@ -232,7 +235,7 @@ button {
   font-size: 20px;
   font-weight: 600px;
   line-height: 1.2;
-  letter-spacing: -0.6px;
+  letter-spacing: -0.7px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -240,24 +243,47 @@ button {
 .ingridients-subtitle {
   text-align: center;
   font-size: 14px;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
   line-height: 1.2;
-  letter-spacing: -0.6px;
+  letter-spacing: -0.3px;
+  padding: 0 20px;
 }
 
 .ingridients-list {
-  display: flex;
-  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .ingridients-item {
-  flex-basis: calc((100% - 60px) / 4);
+  margin-bottom: 20px;
+  border: 1px solid var(--color-brand);
+
+  border-radius: 15px;
+  background: var(--color-background-light);
 }
 
 .ingridient {
-  border: 1px solid var(--color-brand);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 36px;
+  padding: 28px 56px 28px 56px;
   border-radius: 15px;
-  padding: 28px;
+}
+
+.ingridients-imgtitle {
+  font-weight: 600;
+  line-height: 1.29;
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+}
+
+.ingrid__item:nth-child(4n + 1) .ingrid__imgtitle,
+.ingrid__item:nth-child(4n + 3) .ingrid__imgtitle {
+  color: var(--color-primeri-light);
 }
 
 /* END Ingridients section*/
