@@ -76,8 +76,7 @@ button {
 }
 
 /*Hero section*/
-.hero-section {
-  padding-bottom: 72px;
+.section {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -323,16 +322,15 @@ button {
 
 .video-background {
   object-fit: cover;
-  padding-left: 20px;
   border-radius: 15px;
 }
 
 .video-card {
-  padding: 20px 20px;
+  margin-top: 20px;
 }
 
 .video-content {
-  padding: 20px 14px;
+  padding: 20px 14px 20px 14px;
   background-color: var(--color-primeri-light);
   border-radius: 15px;
 }
@@ -340,7 +338,7 @@ button {
 .video-paragraph {
   font-size: 18px;
   font-weight: 600;
-  line-height: 1.32;
+  line-height: 1.4;
   letter-spacing: 0.06px;
 }
 
@@ -348,11 +346,12 @@ button {
   list-style-type: initial;
   padding-left: 14px;
   margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .video-item {
   font-size: 14px;
-  line-height: 1.3;
+  line-height: 1.28;
   letter-spacing: -0.2px;
 }
 .video-item:not(:last-child) {
@@ -367,8 +366,7 @@ button {
   flex-wrap: wrap;
   column-gap: 18px;
   height: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0;
 }
 
 .products-item {
@@ -437,20 +435,19 @@ button {
   color: var(--color-primari);
   margin-bottom: 18px;
   max-width: 308px;
-  padding-left: 20px;
   margin-top: 20px;
   margin-bottom: 32px;
 }
 
 .button-sellers {
   margin-top: 20px;
-  margin-left: 127px;
+  margin-left: 107px;
 }
 /* END Product section */
 
 /* Reviews section */
 .review-list {
-  padding: 0 20px;
+  padding: 0;
   margin-top: 72px;
   margin-bottom: 50px;
 }
@@ -521,6 +518,7 @@ button {
 }
 /* END Reviews section */
 
+/* subscribe section */
 .subscribe {
   background: linear-gradient(
       0deg,
@@ -546,12 +544,64 @@ button {
   line-height: 1.3;
   letter-spacing: -0.02em;
   max-width: 326px;
-  padding-left: 24px;
+  padding-left: 4px;
 }
 
 .button-subscribe {
-  margin: 24px 123px 63px;
+  margin: 24px 103px 63px;
 }
+/* END subscribe section */
+
+/* footer section */
+.footer {
+}
+
+.footer-head {
+}
+
+.footer-title {
+}
+
+.footer-contacts {
+}
+
+.footer-contacts-part {
+}
+
+.footer-contacts-text {
+}
+
+.footer-contacts-list {
+}
+
+.footer-contact-item {
+}
+
+.footer-contacts-link {
+}
+
+.footer-contacts-social-list {
+}
+
+.footer-contacts-social-item {
+}
+
+.footer-contacts-social-link {
+}
+
+.footer-nav {
+}
+
+.footer-nav-list {
+}
+
+.footer-nav-item {
+}
+
+.footer-nav-link {
+}
+
+/* END footer section */
 
 @media (min-width: 1200px) {
   .visually-hidden {
