@@ -17,7 +17,7 @@
       <div class="container">
         <div class="header-inner">
           <nav class="header-nav">
-            <a class="logo" href="./index.html">
+            <a class="logo" href="./index.html" target="_self">
               <span class="logo-accent">Simply</span> chocolate
               <svg width="24" height="24">
                 <use href="./images/icons.svg#icon-chocolate"></use>
@@ -53,9 +53,15 @@
               </svg>
             </a>
           </div>
+          <button class="header-button" type="button" title="Burger">
+            <svg class="header-button-svg" width="21" height="14">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
+    <script type="module" src="./js/header.js"></script>
     <main>
       <!-- Hero section -->
       <section class="section">
@@ -82,7 +88,7 @@
       </section>
 
       <!-- Advantages section -->
-      <section id="advantage-section" class="advantage-section">
+      <section id="advantage-section" class="section advantage-section">
         <div class="container">
           <h2 class="visually-hidden">Our advantages</h2>
           <ul class="advantage-list">
@@ -195,7 +201,7 @@
       </section>
 
       <!-- "How it’s made" section -->
-      <section class="section">
+      <section class="section video-section">
         <div class="container">
           <h2 class="section-title">How it’s made?</h2>
           <div class="video-inner">
@@ -369,7 +375,7 @@
       <!--Review section-->
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Chocolate is loved</h2>
+          <h2 class="section-title review-title">Chocolate is loved</h2>
           <ul class="review-list">
             <li class="review-item">
               <div class="review">
@@ -441,10 +447,12 @@
       </section>
     </main>
     <footer>
-      <section class="footer">
+      <section class="footer section">
         <div class="container">
           <div class="footer-head">
-            <h2 class="footer-title"></h2>
+            <h2 class="footer-title">
+              Chocolate a delicious cure for a bad day
+            </h2>
             <address class="footer-contacts">
               <div class="footer-contacts-part">
                 <p class="footer-contacts-text">Contact us</p>
@@ -474,7 +482,7 @@
                     href="https://www.instagram.com"
                     target="_blank"
                   >
-                    <svg class="footer-contacts-svg" width="24" height="24">
+                    <svg class="footer-contacts-svg" width="22" height="22">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
@@ -485,7 +493,7 @@
                     href="https://twitter.com/"
                     target="_blank"
                   >
-                    <svg class="footer-contacts-svg" width="24" height="24">
+                    <svg class="footer-contacts-svg" width="22" height="22">
                       <use href="./images/icons.svg#icon-Vector-twitter"></use>
                     </svg>
                   </a>

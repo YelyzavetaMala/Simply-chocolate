@@ -24,6 +24,9 @@
     <path d="M10.909 24v-15.273l14.545 7.636-14.545 7.636z"></path>
     <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.7273" d="M31.636 16c0 8.636-7.001 15.636-15.636 15.636s-15.636-7.001-15.636-15.636c0-8.636 7.001-15.636 15.636-15.636s15.636 7.001 15.636 15.636z"></path>
 </symbol>
+<symbol id="icon-menu" viewBox="0 0 48 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M3 16h42M3 2h42M3 30h42"></path>
+</symbol>
 <symbol id="icon-spoon" viewBox="0 0 32 32">
 <path d="M15.373 13.835c-0.894-1.086-1.345-2.418-1.345-3.751 0-4.941 5.921-9.877 11.842-9.877 3.269 0 5.921 2.653 5.921 5.922 0 5.922-4.934 11.845-9.881 11.845-1.332 0-2.665-0.45-3.75-1.345l-14.581 14.584c-0.771 0.771-2.023 0.771-2.794 0s-0.771-2.024 0-2.795l14.587-14.584z"></path>
 </symbol>
