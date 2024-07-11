@@ -101,7 +101,7 @@ button {
   top: -1px;
   background-color: #fafafa;
   box-shadow: 5px 5px 4px 1px rgba(0, 0, 0, 0.3);
-  padding: 23px 20px 17px;
+  padding: 20px 20px 14px;
 
   @media (min-width: 768px) {
     padding: 24px 32px;
@@ -163,7 +163,6 @@ button {
 
 .logo-svg {
   stroke: var(--color-brand);
-  background-color: transparent;
 }
 
 .nav-list {
@@ -184,8 +183,15 @@ button {
   color: var(--color-brand);
 }
 
+.header-button {
+  background-color: transparent;
+  border: none;
+  max-height: 28px;
+}
+
 .header-button-svg {
   fill: var(--color-primari);
+  max-width: 24px;
 }
 
 .menu-toggle {
@@ -204,9 +210,7 @@ button {
 
 @media screen and (max-width: 767px) {
   .header-button {
-    width: 21px;
-    height: 14px;
-    fill: var(--color-primari);
+    padding: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -460,7 +464,7 @@ li:not(:last-child) {
 
 .ingridients-title {
   margin-bottom: 28px;
-  padding: 100px 26px 0 26px;
+
   font-size: 20px;
   font-weight: 600px;
   line-height: 1.2;
@@ -483,7 +487,6 @@ li:not(:last-child) {
   margin-bottom: 32px;
   line-height: 1.26;
   letter-spacing: -0.3px;
-  padding: 0 20px;
 
   @media (min-width: 768px) {
     padding: 0 108px;
@@ -494,16 +497,14 @@ li:not(:last-child) {
 }
 
 .ingridients-list {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0;
+  padding-right: 0;
   margin: 0;
 
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
-    padding-left: 0;
-    padding-right: 0;
   }
   @media (min-width: 1200px) {
   }
@@ -588,8 +589,8 @@ li:not(:last-child) {
 }
 
 .video-title {
+  padding-top: 0;
   @media (min-width: 768px) {
-    padding-top: 0;
     font-size: 24px;
     margin-bottom: 50px;
     line-height: 1.15;
