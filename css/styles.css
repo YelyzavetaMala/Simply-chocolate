@@ -663,18 +663,19 @@ li:not(:last-child) {
 }
 /* END Ingridients section*/
 
-/* video section */
+/* made section */
 
-.video-section {
+.made-section {
   padding-bottom: 0;
   @media (min-width: 768px) {
     padding: 0 77px;
   }
   @media (min-width: 1200px) {
+    padding: 0 32px;
   }
 }
 
-.video-title {
+.made-title {
   padding-top: 0;
   @media (min-width: 768px) {
     font-size: 24px;
@@ -686,29 +687,48 @@ li:not(:last-child) {
   }
 }
 
-.video-media {
-  flex-basis: calc((100% - 20px) / 2);
+.made-part {
+  display: flex;
+  column-gap: 60px;
+  height: 100%;
+  flex-wrap: wrap;
 }
 
-.video-play {
+.made-media {
+  flex-basis: calc((100% - 20px) / 2);
+
+  @media (min-width: 1200px) {
+    max-width: 600px;
+  }
+}
+
+.made-play {
   /* TODO centr*/
   display: none;
 }
 
-.video-background {
+.made-background {
   object-fit: cover;
   border-radius: 15px;
+  @media (min-width: 768px) {
+    width: 614px;
+    height: 400px;
+  }
+  @media (min-width: 1200px) {
+    width: 600px;
+  }
 }
 
-.video-card {
+.made-card {
   margin-top: 20px;
   @media (min-width: 768px) {
   }
   @media (min-width: 1200px) {
+    margin-top: 0;
   }
 }
 
-.video-content {
+.made-content {
   padding: 20px 14px 20px 14px;
   background-color: var(--color-primeri-light);
   border-radius: 15px;
@@ -717,23 +737,25 @@ li:not(:last-child) {
     padding: 32px;
   }
   @media (min-width: 1200px) {
+    max-width: 452px;
   }
 }
 
-.video-paragraph {
+.made-paragraph {
   font-size: 18px;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1.36;
   letter-spacing: 0.03px;
 
   @media (min-width: 768px) {
     max-width: 350px;
   }
   @media (min-width: 1200px) {
+    max-width: 350px;
   }
 }
 
-.video-list {
+.made-list {
   list-style-type: initial;
   padding-left: 14px;
   margin-top: 20px;
@@ -744,19 +766,26 @@ li:not(:last-child) {
     max-width: 468px;
   }
   @media (min-width: 1200px) {
+    max-width: 452px;
   }
 }
 
-.video-item {
+.made-item {
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.2px;
+  @media (min-width: 1200px) {
+    letter-spacing: -0.28px;
+  }
 }
-.video-item:not(:last-child) {
+.made-item:not(:last-child) {
   margin-bottom: 18px;
+  @media (min-width: 1200px) {
+    margin-bottom: 24px;
+  }
 }
 
-/* END video section */
+/* END made section */
 
 /* Product section */
 
