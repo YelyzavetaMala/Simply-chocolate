@@ -115,10 +115,14 @@ button {
   flex-grow: 1;
 }
 
+.header-socials {
+}
+
 .header-socials-link {
   stroke: var(--color-primari);
   fill: none;
   transition: stroke 0.2s;
+  margin-left: 18px;
 }
 
 .logo-accent {
@@ -153,10 +157,9 @@ button {
   padding: 20px 20px 14px;
 
   @media (min-width: 768px) {
-    padding: 24px 32px;
+    padding: 24px 34px;
   }
   @media (min-width: 1200px) {
-    padding: 24px 0 28px;
   }
 }
 
@@ -166,18 +169,13 @@ button {
   align-items: center;
 }
 
-.header-socials {
-  display: none;
-  @media (min-width: 1200px) {
-    display: block;
-  }
-}
-
 .header-nav {
   display: flex;
-  gap: 24px;
   align-items: center;
   flex-grow: 1;
+  @media (min-width: 1200px) {
+    max-height: 24px;
+  }
 }
 
 .header-socials-link {
@@ -211,6 +209,7 @@ button {
     line-height: 1.11;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+    margin-right: 164px;
   }
 }
 
@@ -224,6 +223,10 @@ button {
 
 .nav-list {
   display: none;
+  @media (min-width: 1200px) {
+    display: contents;
+    gap: 24px;
+  }
 }
 
 .nav-link {
@@ -293,6 +296,7 @@ button {
     padding-bottom: 50px;
   }
   @media (min-width: 1200px) {
+    padding-top: 4px;
   }
 }
 
@@ -862,6 +866,10 @@ li:not(:last-child) {
 /* END Product section */
 /* Top Sellers section */
 
+.container-sellers {
+  max-height: 1258px;
+}
+
 .sellers-list {
   padding-left: 0;
   @media (min-width: 768px) {
@@ -870,6 +878,13 @@ li:not(:last-child) {
     margin-bottom: 0;
   }
   @media (min-width: 1200px) {
+    column-gap: 16px;
+  }
+}
+.sellers-item:first-child {
+  margin-bottom: 142px;
+  @media (min-width: 768px) {
+    margin-bottom: 0;
   }
 }
 
@@ -879,20 +894,41 @@ li:not(:last-child) {
     max-height: 464px;
   }
   @media (min-width: 1200px) {
+    max-width: 368px;
   }
 }
 
 .sellers-item-third {
   display: none;
+  @media (min-width: 1200px) {
+    display: contents;
+  }
+}
+
+.sellers-img {
+  @media (min-width: 1200px) {
+    width: 368px;
+  }
 }
 
 .sellers-text-button {
-  display: flex;
-  align-items: center;
-  column-gap: 236px;
+  position: relative;
+  top: -143px;
+  @media (min-width: 768px) {
+    position: static;
+    display: flex;
+    align-items: center;
+    column-gap: 236px;
+  }
+  @media (min-width: 1200px) {
+    column-gap: 568px;
+  }
 }
 
 .sellers-text {
+  position: relative;
+  top: -464px;
+
   font-weight: 400;
   line-height: 1.3;
   letter-spacing: -0.02em;
@@ -902,9 +938,12 @@ li:not(:last-child) {
   margin-top: 20px;
   margin-bottom: 32px;
   @media (min-width: 768px) {
+    position: static;
     margin-top: 32px;
+    margin-bottom: 0;
   }
   @media (min-width: 1200px) {
+    max-width: 407px;
   }
 }
 
@@ -938,9 +977,9 @@ li:not(:last-child) {
     display: flex;
     flex-wrap: wrap;
     margin-top: 91px;
+    gap: 15px;
   }
   @media (min-width: 1200px) {
-    display: flex;
     gap: 25px;
     max-height: 200px;
   }
@@ -956,6 +995,12 @@ li:not(:last-child) {
   box-shadow: 0px 9.04932px 26.57166px 0px rgba(215, 228, 249, 0.25);
   padding: 56px 18px 42px;
   margin-bottom: 60px;
+
+  @media (min-width: 768px) {
+    max-width: 312px;
+    padding: 56px 14px 42px;
+  }
+
   @media (min-width: 1200px) {
     padding: 0;
     position: relative;
@@ -975,6 +1020,7 @@ li:not(:last-child) {
     box-shadow: 0px 9px 26px 0px var(--color-primeri-light-tr);
     padding: 56px 24px 0;
     text-align: center;
+    max-width: 312px;
   }
 }
 
@@ -1045,7 +1091,7 @@ li:not(:last-child) {
       rgba(0, 0, 0, 0.2) 100%
     ),
     url(../images/Subcribe.png), lightgray 0px -481.157px / 100% 375.122%;
-  width: 375px;
+
   max-height: 370px;
   padding-bottom: 63px;
   @media (min-width: 768px) {
@@ -1055,7 +1101,7 @@ li:not(:last-child) {
         rgba(0, 0, 0, 0.2) 100%
       ),
       url(../images/Subcribe\ tab.png), lightgray 0px -481.157px / 100% 375.122%;
-    width: 768px;
+
     max-height: 370px;
     padding-bottom: 72px;
   }
@@ -1067,7 +1113,6 @@ li:not(:last-child) {
       ),
       url(../images/Subcribe\ desk.png),
       lightgray 0px -481.157px / 100% 375.122%;
-    width: 1200px;
   }
 }
 
