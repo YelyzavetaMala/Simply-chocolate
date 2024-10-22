@@ -116,6 +116,10 @@ button {
 }
 
 .header-socials {
+  display: none;
+  @media (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .header-socials-link {
@@ -323,10 +327,10 @@ button {
   line-height: 1.19;
   letter-spacing: -0.6px;
   margin-bottom: 32px;
-  max-width: 290px;
+  width: 290px;
   @media (min-width: 768px) {
     font-size: 28px;
-    max-width: 484px;
+    width: 484px;
     letter-spacing: -0.84px;
   }
 }
@@ -492,10 +496,10 @@ button {
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: var(--color-primeri-light-tr);
-  max-width: 308px;
+  width: 308px;
 
   @media (min-width: 768px) {
-    max-width: 308px;
+    width: 308px;
   }
 }
 
@@ -538,7 +542,7 @@ li:not(:last-child) {
 
   @media (min-width: 768px) {
     font-size: 24px;
-    max-width: 411px;
+    width: 411px;
     padding: 100px 146px 0 146px;
   }
   @media (min-width: 1200px) {
