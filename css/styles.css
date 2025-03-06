@@ -221,6 +221,7 @@ button {
 
 .logo-svg {
   stroke: var(--color-brand);
+  background-color: aqua;
 }
 
 .nav-list {
