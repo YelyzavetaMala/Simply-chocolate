@@ -157,6 +157,7 @@ button {
 .header {
   position: sticky;
   top: -1px;
+  z-index: 1000;
   background-color: #fafafa;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   padding: 20px 20px 14px;
@@ -906,7 +907,7 @@ li:not(:last-child) {
 
 .sellers-text-button {
   position: relative;
-  top: -143px;
+
   @media (min-width: 768px) {
     position: static;
     display: flex;
