@@ -30,19 +30,19 @@
             </a>
             <ul class="nav-list">
               <li>
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#hero">Home</a>
               </li>
               <li>
-                <a class="nav-link" href="#">How it’s made?</a>
+                <a class="nav-link" href="#made">How it’s made?</a>
               </li>
               <li>
-                <a class="nav-link" href="#">Our products</a>
+                <a class="nav-link" href="#gallery">Our products</a>
               </li>
               <li>
-                <a class="nav-link" href="#">Top sellers</a>
+                <a class="nav-link" href="#sellers">Top sellers</a>
               </li>
               <li>
-                <a class="nav-link" href="#">Chocolate is loved</a>
+                <a class="nav-link" href="#review">Chocolate is loved</a>
               </li>
             </ul>
           </nav>
@@ -58,7 +58,12 @@
               </svg>
             </a>
           </div>
-          <button class="header-button" type="button" title="Burger">
+          <button
+            id="openModalBtn"
+            class="menu-button"
+            type="button"
+            title="open menu"
+          >
             <svg class="header-button-svg" width="28" height="28">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
@@ -68,7 +73,7 @@
     </header>
     <main>
       <!-- Hero section -->
-      <section class="section hero-section">
+      <section id="hero" class="section hero-section">
         <div class="container">
           <div class="hero-inner">
             <h1 class="hero-title">
@@ -77,7 +82,7 @@
             </h1>
             <div class="hero-actions">
               <button class="button-primary" type="button">Buy now</button>
-              <a class="hero-button" href="#">How it’s made</a>
+              <a class="hero-button" href="#made">How it’s made</a>
               <a class="hero-arrow" href="#advantage-section">
                 scroll down
                 <span class="hero-arrow-link">
@@ -205,7 +210,7 @@
       </section>
 
       <!-- "How it’s made" section -->
-      <section class="section made-section">
+      <section id="made" class="section made-section">
         <div class="container">
           <h2 class="section-title made-title">How it’s made?</h2>
           <div class="made-part">
@@ -252,7 +257,7 @@
         </div>
       </section>
       <!--Products section-->
-      <section id="gallery" class="section section-products">
+      <section id="gallery " class="section section-products">
         <div class="container">
           <h2 class="section-title">Our Products</h2>
           <div class="swiper-gallery">
@@ -381,7 +386,7 @@
       </section>
 
       <!--Top Sellers section-->
-      <section class="section">
+      <section id="sellers" class="section">
         <div class="container container-sellers">
           <h2 class="section-title">Top Sellers</h2>
           <ul class="sellers-list">
@@ -434,7 +439,7 @@
       </section>
 
       <!--Review section-->
-      <section class="section">
+      <section id="review" class="section">
         <div class="container">
           <h2 class="section-title review-title">Chocolate is loved</h2>
           <div class="swiper swiper-review-init">
@@ -572,25 +577,64 @@
           </div>
           <ul class="footer-nav-list">
             <li class="footer-nav-item">
-              <a class="footer-nav-link" href="#S0">Home</a>
+              <a class="footer-nav-link" href="#hero">Home</a>
             </li>
             <li class="footer-nav-item">
-              <a class="footer-nav-link" href="#S1">How it’s made?</a>
+              <a class="footer-nav-link" href="#made">How it’s made?</a>
             </li>
             <li class="footer-nav-item">
-              <a class="footer-nav-link" href="#S2">Our products</a>
+              <a class="footer-nav-link" href="#gallery">Our products</a>
             </li>
             <li class="footer-nav-item">
-              <a class="footer-nav-link" href="#S3">Top sellers</a>
+              <a class="footer-nav-link" href="#sellers">Top sellers</a>
             </li>
             <li class="footer-nav-item">
-              <a class="footer-nav-link" href="#S4">Chocolate is loved</a>
+              <a class="footer-nav-link" href="#review">Chocolate is loved</a>
             </li>
           </ul>
         </div>
       </section>
     </footer>
-
+    <section>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <div class="menu-svg">
+            <a
+              class="menu-social-modal"
+              target="_self"
+              rel="noopener"
+              href="./index.html"
+            >
+              <svg class="logo-svg-modal" width="64" height="46">
+                <use href="img/icons.svg#icon-logo"></use>
+              </svg>
+            </a>
+            <button class="menu-button close-btn">
+              <svg class="header-menu close-svg" width="24" height="24">
+                <use href="img/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="modal-list">
+            <li class="modal-item">
+              <a class="modal-nav" href="#hero">Home</a>
+            </li>
+            <li class="modal-item">
+              <a class="modal-nav" href="#made">How it’s made?</a>
+            </li>
+            <li class="modal-item">
+              <a class="modal-nav" href="#gallery">Our products</a>
+            </li>
+            <li class="modal-item">
+              <a class="modal-nav" href="#sellers">Top sellers</a>
+            </li>
+            <li class="modal-item">
+              <a class="modal-nav" href="#review">Chocolate is loved</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
