@@ -172,6 +172,13 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 335px;
+  @media (min-width: 768px) {
+    max-width: 704px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1136px;
+  }
 }
 
 .header-nav {
@@ -188,11 +195,11 @@ button {
   fill: none;
   transition: stroke 0.2s;
 }
-
+/*
 .header-socials-link:hover {
   stroke: var(--color-brand);
 }
-
+*/
 .logo {
   display: flex;
   align-items: center;
@@ -221,11 +228,13 @@ button {
 .logo-accent {
   font-style: italic;
 }
-
+/*
 .logo-svg {
   stroke: var(--color-brand);
 }
 
+
+*/
 .nav-list {
   display: none;
   @media (min-width: 1200px) {
@@ -1024,6 +1033,7 @@ li:not(:last-child) {
 
 .review-title {
   padding-top: 0;
+  margin-bottom: 0;
 }
 
 .review-list {
@@ -1050,7 +1060,8 @@ li:not(:last-child) {
   box-shadow: 0px 9.04932px 26.57166px 0px rgba(215, 228, 249, 0.25);
   padding: 56px 18px 42px;
   margin-bottom: 60px;
-  max-width: 312px;
+  width: 335px;
+  height: 242px;
 
   @media (min-width: 768px) {
     padding: 56px 14px 42px;
@@ -1059,7 +1070,7 @@ li:not(:last-child) {
   @media (min-width: 1200px) {
     padding: 0;
     position: relative;
-    flex-basis: calc((100% - 56px) / 3);
+
     height: 200px;
   }
 }
@@ -1075,8 +1086,11 @@ li:not(:last-child) {
     box-shadow: 0px 9px 26px 0px var(--color-primeri-light-tr);
     padding: 56px 24px 0;
     text-align: center;
-    max-width: 312px;
   }
+}
+
+.reviews-info {
+  max-width: 300px;
 }
 
 .review-image {
@@ -1108,9 +1122,9 @@ li:not(:last-child) {
 .review-description {
   color: var(--color-primari);
   text-align: center;
-  line-height: 1.28;
+  line-height: 1.4;
   letter-spacing: -0.3px;
-  max-width: 312px;
+
   margin: 24px auto;
 }
 

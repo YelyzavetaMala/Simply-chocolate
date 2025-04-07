@@ -14,9 +14,9 @@ const swiperParams = {
   modules: [Pagination, Navigation, Scrollbar, Keyboard, Mousewheel],
 
   breakpoints: {
-    375: { slidesPerView: 1, spaceBetween: 28 },
-    834: { slidesPerView: 2, spaceBetween: 28 },
-    1440: { slidesPerView: 3, spaceBetween: 28 },
+    375: { slidesPerView: 1, spaceBetween: 16 },
+    834: { slidesPerView: 2, spaceBetween: 16 },
+    1440: { slidesPerView: 3, spaceBetween: 16 },
   },
 
   navigation: {
