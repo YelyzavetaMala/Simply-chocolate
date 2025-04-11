@@ -624,9 +624,28 @@
             Made with only the finest ingredients and handcrafted with the
             utmost care, each piece is a work of art that is sure to please.
           </p>
-          <button class="button-primary button-subscribe" type="button">
+          <button
+            id="orderBtn"
+            class="button-primary button-subscribe"
+            type="button"
+          >
             Subscribe
           </button>
+          <div class="popup-backdrop" id="popup">
+            <div class="popup-window">
+              <button class="popup-close" id="closePopup">&times;</button>
+              <h2>Оформлення замовлення</h2>
+              <form>
+                <label>Ваше ім'я:</label>
+                <input type="text" name="name" required />
+
+                <label>Телефон:</label>
+                <input type="tel" name="phone" required />
+
+                <button type="submit">Відправити</button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>

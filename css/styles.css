@@ -819,24 +819,33 @@ li:not(:last-child) {
 
 .overlay-title {
   font-size: 18px;
-
+  font-weight: 600;
   margin-bottom: 8px;
   text-transform: uppercase;
-  color: #111;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--color-primari);
+  @media (min-width: 1200px) {
+    max-width: 163px;
+  }
 }
 
 .overlay-text {
   font-size: 14px;
-  line-height: 1.4;
+
   margin-top: auto;
-  color: #111;
+  color: var(--color-primari);
   width: 279px;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   @media (min-width: 768px) {
     width: 280px;
   }
   @media (min-width: 1200px) {
     width: 230px;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
   }
 }
 
@@ -1327,6 +1336,38 @@ li:not(:last-child) {
   @media (min-width: 1200px) {
     margin-left: 482px;
   }
+}
+
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-window {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  position: relative;
+  width: 300px;
+  max-width: 90%;
+}
+
+.popup-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 /* END subscribe section */
 
