@@ -633,16 +633,53 @@
           </button>
           <div class="popup-backdrop" id="popup">
             <div class="popup-window">
+              <picture>
+                <source
+                  srcset="
+                    /images/subscribe/subscribe-desk-1x.jpg 1x,
+                    /images/subscribe/subscribe-desk-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    /images/subscribe/subscribe-tab-1x.jpg 1x,
+                    /images/subscribe/subscribe-tab-2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    /images/subscribe/subscribe-mob-1x.jpg 1x,
+                    /images/subscribe/subscribe-mob-1x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="subscribe-img"
+                  loading="lazy"
+                  src="/images/subscribe/subscribe-desk-1x.jpg"
+                  alt="subscribe"
+                />
+              </picture>
               <button class="popup-close" id="closePopup">&times;</button>
-              <h2>Оформлення замовлення</h2>
-              <form>
-                <label>Ваше ім'я:</label>
-                <input type="text" name="name" required />
-
-                <label>Телефон:</label>
-                <input type="tel" name="phone" required />
-
-                <button type="submit">Відправити</button>
+              <h2 class="subscribe-form-text">
+                Explore our
+                <span class="accent-word">new chocolate</span> first!
+              </h2>
+              <form class="subscribe-form">
+                <input
+                  type="email"
+                  class="input-field"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+                <button class="button-form" type="submit">Subscribe</button>
               </form>
             </div>
           </div>
