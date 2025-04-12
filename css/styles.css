@@ -22,6 +22,10 @@ body {
   margin: 0;
 }
 
+body.noscroll {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: var(--color-primeri-light);
@@ -1388,32 +1392,57 @@ li:not(:last-child) {
 }
 
 .subscribe-form {
-  padding: 32px 24px;
+  padding-left: 24px;
+  padding-bottom: 32px;
   display: flex;
+  align-items: end;
+  @media (min-width: 768px) {
+    padding-left: 40px;
+    padding-bottom: 40px;
+  }
 }
+
+.input-field::placeholder {
+  color: rgba(64, 64, 64, 0.2);
+}
+
 .subscribe-form-text {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
+  padding-left: 24px;
+  padding-top: 32px;
+  @media (min-width: 768px) {
+    font-size: 24px;
+    width: 298px;
+    padding-left: 40px;
+    padding-top: 40px;
+  }
 }
 
 .input-field {
+  background-color: var(--color-background-light);
   font-size: 14px;
   margin-top: 24px;
   border-radius: 100px;
-  color: rgba(64, 64, 64, 0.3);
-  border: 1.5px solid rgba(64, 64, 64, 0.3);
+  color: var(--color-primari);
+  border: 1px solid rgba(64, 64, 64, 0.2);
   padding: 14px 18px;
   width: 163px;
   @media (min-width: 768px) {
+    font-size: 18px;
     padding: 14px 24px;
+    width: 265px;
+    margin-top: 28px;
   }
 }
+
 .button-form {
+  position: relative;
   background-color: var(--color-brand);
   color: var(--color-primeri-light);
   cursor: pointer;
-  border: none;
+  border: 2px solid var(--color-brand);
   width: 100px;
   height: 45px;
   border-radius: 100px;
@@ -1422,8 +1451,16 @@ li:not(:last-child) {
   letter-spacing: 0.5px;
   margin-right: 10px;
   transition: transform 250ms ease-in-out;
+
+  position: absolute;
+
+  left: 75%;
+  transform: translateX(-50%);
+  z-index: 2;
   @media (min-width: 768px) {
-    padding: 18px 32px;
+    left: 80%;
+    width: 137px;
+    height: 52px;
     margin-right: 0;
   }
 }
