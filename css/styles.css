@@ -1287,10 +1287,11 @@ li:not(:last-child) {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
-
+  margin-bottom: 32px;
   @media (min-width: 768px) {
     font-size: 24px;
     width: 298px;
+    margin-bottom: 40px;
   }
 }
 
@@ -1305,7 +1306,7 @@ li:not(:last-child) {
 .review-input {
   background-color: var(--color-background-light);
   font-size: 14px;
-  margin-top: 24px;
+  margin-bottom: 14px;
   border-radius: 8px;
   color: var(--color-primari);
   border: 1px solid rgba(64, 64, 64, 0.2);
@@ -1313,9 +1314,9 @@ li:not(:last-child) {
   width: 263px;
   @media (min-width: 768px) {
     font-size: 18px;
-    padding: 14px 24px;
+    padding: 22px 24px;
     width: 437px;
-    margin-top: 28px;
+    margin-bottom: 18px;
   }
 }
 
@@ -1327,7 +1328,7 @@ li:not(:last-child) {
 .form-description {
   background-color: var(--color-background-light);
   font-size: 14px;
-  margin-top: 24px;
+  margin-bottom: 18px;
   border-radius: 8px;
   color: var(--color-primari);
   border: 1px solid rgba(64, 64, 64, 0.2);
@@ -1337,7 +1338,6 @@ li:not(:last-child) {
     font-size: 18px;
     padding: 14px 24px;
     width: 437px;
-    margin-top: 28px;
   }
 }
 
