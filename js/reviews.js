@@ -37,3 +37,17 @@ const swiperParams = {
 };
 
 const swiper = new Swiper('.swiper-review-init', swiperParams);
+
+const orderBtn = document.getElementById('reviewBtn');
+const popup = document.getElementById('reviewPopup');
+const closePopup = document.getElementById('reviewClose');
+
+orderBtn.addEventListener('click', () => {
+  popup.style.display = 'flex';
+  document.body.classList.add('noscroll');
+});
+
+closePopup.addEventListener('click', () => {
+  popup.style.display = 'none';
+  document.body.classList.remove('noscroll');
+});

@@ -609,7 +609,48 @@
             <div class="swiper-button-prev swiper-btn-prev"></div>
             <div class="swiper-button-next swiper-btn-next"></div>
           </div>
-          <button class="review-button" type="button">Leave a review</button>
+          <button id="reviewBtn" class="review-button" type="button">
+            Leave a review
+          </button>
+          <div class="popup-backdrop" id="reviewPopup">
+            <div class="review-window">
+              <button class="review-close" id="reviewClose">&times;</button>
+              <h3 class="review-form-text">
+                leave a review about
+                <span class="accent-word">our chocolate</span>
+              </h3>
+              <form class="review-form">
+                <input
+                  class="review-input"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  class="review-input"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+                <input
+                  class="review-input"
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone number"
+                  required
+                />
+                <textarea
+                  class="form-description"
+                  name="description"
+                  placeholder="Enter text"
+                  rows="4"
+                ></textarea>
+                <button class="review-form-button" type="submit">Send</button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
       <!--Subscribe section-->
