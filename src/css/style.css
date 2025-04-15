@@ -307,7 +307,7 @@ button {
   right: 0;
   bottom: 0;
   background: linear-gradient(rgba(20, 26, 25, 1), rgba(0, 0, 0, 0)),
-    url('/img/modal-background.jpg') center/cover no-repeat;
+    url('/images/modal-background.jpg') center/cover no-repeat;
   opacity: 0.8;
 }
 
@@ -1375,7 +1375,7 @@ li:not(:last-child) {
       rgba(0, 0, 0, 0.2) 0%,
       rgba(0, 0, 0, 0.2) 100%
     ),
-    url(../images/Subcribe.png);
+    url(/images/Subcribe.png);
   background-color: lightgray;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1387,7 +1387,7 @@ li:not(:last-child) {
         rgba(0, 0, 0, 0.2) 0%,
         rgba(0, 0, 0, 0.2) 100%
       ),
-      url(../images/Subcribe\ tab.png);
+      url(/images/Subcribe\ tab.png);
     padding-bottom: 72px;
   }
 
@@ -1397,7 +1397,7 @@ li:not(:last-child) {
         rgba(0, 0, 0, 0.2) 0%,
         rgba(0, 0, 0, 0.2) 100%
       ),
-      url(../images/Subcribe\ desk.png);
+      url(/images/Subcribe\ desk.png);
   }
 }
 
