@@ -1267,8 +1267,8 @@ li:not(:last-child) {
   height: 471px;
   max-width: 90%;
   @media (min-width: 768px) {
-    width: 517px;
-    height: 628px;
+    width: 437px;
+    height: 548px;
     padding: 40px 40px;
   }
 }
@@ -1276,10 +1276,10 @@ li:not(:last-child) {
 .review-close {
   position: absolute;
   top: 8px;
-  right: 12px;
+  right: 18px;
   background: transparent;
   border: none;
-  font-size: 24px;
+  font-size: 54px;
   cursor: pointer;
 }
 
@@ -1292,6 +1292,8 @@ li:not(:last-child) {
     font-size: 24px;
     width: 298px;
     margin-bottom: 40px;
+
+    letter-spacing: -0.8px;
   }
 }
 
@@ -1315,7 +1317,7 @@ li:not(:last-child) {
   @media (min-width: 768px) {
     font-size: 18px;
     padding: 22px 24px;
-    width: 437px;
+    width: 389px;
     margin-bottom: 18px;
   }
 }
@@ -1337,7 +1339,9 @@ li:not(:last-child) {
   @media (min-width: 768px) {
     font-size: 18px;
     padding: 14px 24px;
-    width: 437px;
+    width: 389px;
+    height: 105px;
+    margin-bottom: 18px;
   }
 }
 
@@ -1354,9 +1358,9 @@ li:not(:last-child) {
   letter-spacing: 0.5px;
   padding: 12px 28px;
   transition: transform 250ms ease-in-out;
-  margin-top: 18px;
+
   @media (min-width: 768px) {
-    width: 137px;
+    width: 117px;
     height: 52px;
     padding: 14px 40px;
   }
