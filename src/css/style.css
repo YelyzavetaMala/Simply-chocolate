@@ -158,7 +158,7 @@ button {
 
 .nav-link {
   display: inline-block;
-  padding: 24px 0;
+
   color: var(--color-primari);
   font-weight: 500;
   line-height: 1.14;
@@ -259,7 +259,7 @@ button {
 
 .nav-link {
   display: inline-block;
-  padding: 24px 0;
+
   color: var(--color-primari);
   font-weight: 500;
   line-height: 1.14;
@@ -267,8 +267,11 @@ button {
   text-decoration: none;
 }
 
-.nav-link:hover {
-  color: var(--color-brand);
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+  transform: scale(1.1);
+  border-bottom: 2px solid var(--color-brand);
 }
 
 .menu-button {
@@ -1740,6 +1743,13 @@ a.footer-nav-link {
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   max-height: 16px;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:active,
+.footer-nav-link:focus {
+  transform: scale(1.1);
+  border-bottom: 2px solid var(--color-brand);
 }
 
 /* END footer section */
