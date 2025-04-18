@@ -462,7 +462,7 @@ button {
 .button-primary:focus {
   color: var(--color-brand);
   background-color: #fcf1e0;
-  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.7);
+  box-shadow: 6px 6px 15px rgba(56, 21, 2, 0.7);
   transform: scale(1.1);
 }
 
@@ -484,7 +484,7 @@ button {
 .hero-button:active,
 .hero-button:focus {
   color: var(--color-brand);
-  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.7);
+  box-shadow: 6px 6px 15px rgba(56, 21, 2, 0.7);
   transform: scale(1.1);
 }
 
@@ -1154,6 +1154,49 @@ li:not(:last-child) {
     letter-spacing: -0.02em;
   }
 }
+
+.buynow-window {
+  background: var(--color-background-light);
+  padding: 32px 24px;
+  border-radius: 12px;
+  position: relative;
+  width: 311px;
+  height: 551px;
+  max-width: 90%;
+  @media (min-width: 768px) {
+    width: 437px;
+    height: 718px;
+    padding: 40px 40px;
+  }
+}
+
+.label-form {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.buynow-form-button {
+  position: relative;
+  background-color: var(--color-brand);
+  color: var(--color-primeri-light);
+  cursor: pointer;
+  border: 2px solid var(--color-brand);
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  padding: 12px 28px;
+  transition: transform 250ms ease-in-out;
+  width: 109px;
+  @media (min-width: 768px) {
+    width: 133px;
+    height: 52px;
+    padding: 14px 40px;
+  }
+}
+
 /* END Product section */
 
 /* Reviews section */
@@ -1257,7 +1300,7 @@ li:not(:last-child) {
 .review-button:focus {
   color: var(--color-background-light);
   background-color: var(--color-brand);
-  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.7);
+  box-shadow: 6px 6px 15px rgba(56, 21, 2, 0.7);
   transform: scale(1.1);
 }
 
@@ -1465,6 +1508,8 @@ li:not(:last-child) {
   justify-content: center;
   align-items: center;
   z-index: 1000;
+
+  overflow-y: auto;
 }
 
 .popup-window {

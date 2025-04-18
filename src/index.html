@@ -81,7 +81,9 @@
               moment of pure delight!
             </h1>
             <div class="hero-actions">
-              <button class="button-primary" type="button">Buy now</button>
+              <button class="buynowBtn button-primary" type="button">
+                Buy now
+              </button>
               <a class="hero-button" href="#made">How it’s made</a>
               <a class="hero-arrow" href="#gallery">
                 scroll down
@@ -491,9 +493,65 @@
               and was first discovered by the Native American tribe called the
               Mayans.
             </p>
-            <button class="button-primary button-sellers" type="button">
+            <button
+              class="buynowBtn button-primary button-sellers"
+              type="button"
+            >
               Buy now
             </button>
+            <div class="popup-backdrop" id="buynowPopup">
+              <div class="buynow-window">
+                <button class="review-close" id="buynowClose">&times;</button>
+                <h3 class="review-form-text">
+                  <span class="accent-word">bUY</span> nOW
+                </h3>
+                <form class="review-form">
+                  <label class="label-form" for="name"
+                    >Personal information</label
+                  >
+                  <input
+                    class="review-input"
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    required
+                  />
+                  <input
+                    class="review-input"
+                    type="text"
+                    name="name"
+                    placeholder="Surname"
+                    required
+                  />
+                  <label class="label-form" for="email">Email</label>
+                  <input
+                    class="review-input"
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                  <label class="label-form" for="phone">Phone number</label>
+                  <input
+                    class="review-input"
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone number"
+                    required
+                  />
+                  <label class="label-form" for="message">Comment</label>
+                  <textarea
+                    class="form-description"
+                    name="description"
+                    placeholder="Enter text"
+                    rows="4"
+                  ></textarea>
+                  <button class="buynow-form-button" type="submit">
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>
