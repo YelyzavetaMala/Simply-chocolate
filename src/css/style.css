@@ -171,7 +171,7 @@ button {
 .header {
   position: sticky;
   top: -1px;
-  z-index: 3000;
+  z-index: 3;
   background-color: #fafafa;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   padding: 20px 20px 14px;
@@ -293,7 +293,7 @@ button {
 .modal {
   display: none;
   position: fixed;
-  z-index: 4000;
+  z-index: 4;
   right: 0;
   top: 0;
   width: 60%;
@@ -394,17 +394,17 @@ button {
   background-color: var(--color-background);
   padding: 395px 20px 20px 20px;
   border-radius: 30px;
-  background-image: url('../images/chocolate-covered-cocoa-powder\ 1\ mob.jpg');
+  background-image: url('/images/chocolate-covered-cocoa-powder\ 1\ mob.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   @media (min-width: 768px) {
     padding: 671px 40px 40px 40px;
-    background-image: url('../images/chocolate-covered-cocoa-powder\ 1\ tab.jpg');
+    background-image: url('/images/chocolate-covered-cocoa-powder\ 1\ tab.jpg');
   }
   @media (min-width: 1200px) {
     padding: 381px 40px 40px 40px;
-    background-image: url('../images/chocolate-covered-cocoa-powder\ 1.jpg');
+    background-image: url('/images/chocolate-covered-cocoa-powder\ 1.jpg');
   }
 }
 
@@ -1501,7 +1501,7 @@ li:not(:last-child) {
   display: none;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 5;
 
   overflow-y: auto;
 }
