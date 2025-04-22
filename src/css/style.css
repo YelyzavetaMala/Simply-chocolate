@@ -171,7 +171,7 @@ button {
 .header {
   position: sticky;
   top: -1px;
-  z-index: 1000;
+  z-index: 3000;
   background-color: #fafafa;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   padding: 20px 20px 14px;
@@ -293,10 +293,10 @@ button {
 .modal {
   display: none;
   position: fixed;
-  z-index: 25;
-  left: 0;
+  z-index: 4000;
+  right: 0;
   top: 0;
-  width: 100%;
+  width: 60%;
   height: 100%;
 
   background-color: rgba(20, 26, 25, 1);
@@ -309,9 +309,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(rgba(20, 26, 25, 1), rgba(0, 0, 0, 0)),
-    url('/images/modal-background.jpg') center/cover no-repeat;
-  opacity: 0.8;
+  background: var(--color-background);
 }
 
 .modal-content {
@@ -338,28 +336,24 @@ button {
   position: absolute;
   top: 29px;
 
-  right: -46px;
-  fill: #fafafa;
-}
-.close-svg {
-  width: 24px;
-  height: 24px;
-  fill: #fafafa;
+  right: 46px;
+  color: #fafafa;
 }
 
 .modal-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   justify-content: center;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.05em;
+  padding-left: 0;
 }
 
 .modal-item:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .modal-nav {
