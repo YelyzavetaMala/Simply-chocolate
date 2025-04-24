@@ -1,32 +1,30 @@
 const modal = document.getElementById('modal');
+const modalBackdrop = document.getElementById('modalBackdrop');
 const openModalBtn = document.getElementById('openModalBtn');
 const closeModalBtn = document.querySelector('.close-btn');
 const listItems = document.querySelectorAll('.modal-item');
 
-// Відкрити модалку
 openModalBtn.onclick = function () {
-  modal.style.display = 'block';
+  modal.classList.add('active');
+  modalBackdrop.classList.add('active');
+  modalBackdrop.style.display = 'block';
   document.body.classList.add('body-no-scroll');
 };
 
-// Закрити модалку
-closeModalBtn.onclick = function () {
-  modal.style.display = 'none';
+function closeModal() {
+  modal.classList.remove('active');
+  modalBackdrop.classList.remove('active');
   document.body.classList.remove('body-no-scroll');
-};
 
-// Закрити модалку при кліку поза її межами
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = 'none';
-    document.body.classList.remove('body-no-scroll');
-  }
-};
+  // затримка для завершення анімації
+  setTimeout(() => {
+    modalBackdrop.style.display = 'none';
+  }, 300);
+}
 
-// Закрити модалку при натисканні на пункт списку
-listItems.forEach(function (item) {
-  item.onclick = function () {
-    modal.style.display = 'none';
-    document.body.classList.remove('body-no-scroll');
-  };
+closeModalBtn.onclick = closeModal;
+modalBackdrop.onclick = closeModal;
+
+listItems.forEach(item => {
+  item.onclick = closeModal;
 });
