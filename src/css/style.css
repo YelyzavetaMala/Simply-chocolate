@@ -460,17 +460,17 @@ button {
   background-color: var(--color-background);
   padding: 395px 20px 20px 20px;
   border-radius: 30px;
-  background-image: url('/images/chocolate-covered-cocoa-powder\ 1\ mob.jpg');
+  background-image: url('/images/chocolate-covered-cocoa-powder-1mob.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   @media (min-width: 768px) {
     padding: 671px 40px 40px 40px;
-    background-image: url('/images/chocolate-covered-cocoa-powder\ 1\ tab.jpg');
+    background-image: url('/images/chocolate-covered-cocoa-powder-1tab.jpg');
   }
   @media (min-width: 1200px) {
     padding: 381px 40px 40px 40px;
-    background-image: url('/images/chocolate-covered-cocoa-powder\ 1.jpg');
+    background-image: url('/images/chocolate-covered-cocoa-powder-1.jpg');
   }
 }
 
@@ -1497,7 +1497,7 @@ li:not(:last-child) {
         rgba(0, 0, 0, 0.2) 0%,
         rgba(0, 0, 0, 0.2) 100%
       ),
-      url(/images/Subcribe\ tab.png);
+      url(/images/Subcribe-tab.png);
     padding-bottom: 72px;
   }
 
@@ -1507,7 +1507,7 @@ li:not(:last-child) {
         rgba(0, 0, 0, 0.2) 0%,
         rgba(0, 0, 0, 0.2) 100%
       ),
-      url(/images/Subcribe\ desk.png);
+      url(/images/Subcribe-desk.png);
   }
 }
 
