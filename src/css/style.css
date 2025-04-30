@@ -19,15 +19,7 @@ body {
   color: var(--color-primari);
   background-color: var(--color-background-light);
   font-size: 14px;
-  margin: 0;
-  width: 375px;
-
-  @media (min-width: 768px) {
-    width: 768px;
-  }
-  @media (min-width: 1200px) {
-    width: 1200px;
-  }
+  margin: 0 auto;
 }
 
 body.noscroll {
@@ -184,10 +176,15 @@ button {
   box-shadow: 0 6px 6px -4px rgba(0, 0, 0, 0.3);
   padding: 20px 20px 14px;
   width: 100%;
-  max-width: 335px;
+  width: 335px;
+  margin: 0 auto;
 
   @media (min-width: 768px) {
     padding: 24px 34px;
+    width: 704px;
+  }
+  @media (min-width: 1200px) {
+    width: 100%;
   }
 }
 
@@ -195,6 +192,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 
   @media (min-width: 768px) {
     max-width: 704px;
@@ -448,6 +446,7 @@ button {
 /*Hero section*/
 
 .hero-section {
+  transform: translateY(-4px);
   @media (min-width: 768px) {
     padding-bottom: 50px;
   }
